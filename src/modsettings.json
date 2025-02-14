@@ -1,0 +1,40 @@
+{
+  "Version": "1.00",
+  "Sections": [
+    {
+      "Name": "Settings",
+      "IsAdvanced": false,
+      "Keys": [
+        {
+          "Value": true,
+          "Name": "EnablePoisonMessage",
+          "Description": "Show message when player is poisoned",
+          "$version": "v1",
+          "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+        },
+        {
+          "Value": true,
+          "Name": "EnableDiseaseMessage",
+          "Description": "Show message when player get a disease",
+          "$version": "v1",
+          "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+        },
+        {
+          "Value": "You have been poisoned!",
+          "Name": "PoisonMessage",
+          "Description": "Message to show when player is poisoned",
+          "$version": "v1",
+          "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.TextKey"
+        },
+        {
+          "Value": "You got a disease!",
+          "Name": "DiseaseMessage",
+          "Description": "Message to show when player get a disease",
+          "$version": "v1",
+          "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.TextKey"
+        }
+      ],
+      "$version": "v1"
+    }
+  ]
+}

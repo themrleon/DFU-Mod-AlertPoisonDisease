@@ -1,0 +1,13 @@
+{
+    "ModTitle": "Alert Poison Disease",
+    "ModVersion": "1.0",
+    "ModAuthor": "themrleon",
+    "DFUnity_Version": "1.1.1",
+    "ModDescription": "Get an alert whenever player get poisoned or a disease",
+    "GUID": "cf03c7ac-f237-4c4d-8a8f-98e745ae73a5",
+    "Files": [
+        "Assets/Game/Mods/AlertPoisonDisease/AlertPoisonDisease.cs",
+        "Assets/Game/Mods/AlertPoisonDisease/modsettings.json",
+        "Assets/Game/Mods/AlertPoisonDisease/AlertPoisonDisease.dfmod.json"
+    ]
+}
