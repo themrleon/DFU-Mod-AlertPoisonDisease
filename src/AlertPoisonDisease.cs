@@ -26,14 +26,20 @@ public class AlertPoisonDiseaseMod : MonoBehaviour
     {
         // Store the mod reference
         Mod = initParams.Mod;
-
+ 
         // Create a new GameObject to hold the mod component
         GameObject go = new GameObject(Mod.Title);
         go.AddComponent<AlertPoisonDiseaseMod>();
 
-        LoadModSettings();
+        // Allow to access mod settings during gameplay 
+        Mod.LoadSettingsCallback = LoadSettings;
 
         Mod.IsReady = true;
+    }
+
+    private void Start()
+    {
+        Mod.LoadSettings();
     }
 
     void Update()
@@ -45,8 +51,7 @@ public class AlertPoisonDiseaseMod : MonoBehaviour
             timeSinceLastCheck = 0.0f; // Reset the timer
         }
     }
-
-    static void LoadModSettings()
+    static void LoadSettings(ModSettings modSettings, ModSettingsChange change)
     {
         ModSettings settings = Mod.GetSettings();
         if (settings != null)
